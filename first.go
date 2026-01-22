@@ -60,7 +60,55 @@ func main() {
 		fmt.Println(b)
 		b++
 	}
-// Decision Making
+	// Decision Making
+	age := 8
+
+	if age > 8 {
+		fmt.Println("Yes you can play")
+	} 	else {
+		fmt.Println("sorry you cant play")
+	}
+
+	switch age {
+		case 8: fmt.Println("You go and read")
+		case 18: fmt.Println("You go to college")
+		default: fmt.Println("You free to go")
+	}
+
+//Array 
+
+var numArry[10] int
+
+numArry[0] = 23
+numArry[1] = 45
+numArry[2] = 67
+numArry[3] = 89
+fmt.Println(numArry[2])
+
+someArray := [2]int{1,2}
+
+fmt.Println(someArray)
+
+for i, val := range someArray{
+	fmt.Println(val, i)
+}
+// Array slice
+
+toSlice := []int{3,5,6,7, 9,8}
+
+sliced := toSlice[1:4]
+	fmt.Println(sliced)
+
+newSlice:= make([]int, 5, 10)
+
+copy(newSlice, toSlice)
+
+rdSlice := append(newSlice, 45, 67, 89, -1)
+
+	fmt.Println(newSlice)
+	fmt.Println(rdSlice)
+
+	fmt.Println(toSlice)
 
 }
 
