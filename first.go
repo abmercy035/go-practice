@@ -80,7 +80,7 @@ func main() {
 var numArry[10] int
 
 numArry[0] = 23
-numArry[1] = 45
+numArry[1] = 45 
 numArry[2] = 67
 numArry[3] = 89
 fmt.Println(numArry[2])
@@ -92,6 +92,7 @@ fmt.Println(someArray)
 for i, val := range someArray{
 	fmt.Println(val, i)
 }
+
 // Array slice
 
 toSlice := []int{3,5,6,7, 9,8}
@@ -109,6 +110,32 @@ rdSlice := append(newSlice, 45, 67, 89, -1)
 	fmt.Println(rdSlice)
 
 	fmt.Println(toSlice)
+
+	// Maps
+
+	myMap := make(map[string]int)
+	myMap["Abraham"] = 25
+	myMap["Samuel"] = 30
+	fmt.Println(len(myMap))
+
+nestedMap := map[string]map[string]string{
+	"Person1": map[string]string{"name": "John", "colour": "black"},
+	"Person2": map[string]string{"name": "Doe", "colour": "white"},
+}
+
+if temp, person := nestedMap["Person1"]; person {
+	fmt.Println(temp["name"])
+}
+
+	fmt.Println((nestedMap))
+
+
+// fUNCTION 
+
+// func add 
+// result := addNumbers(4, 5)
+// fmt.Println(result)
+
 
 }
 
