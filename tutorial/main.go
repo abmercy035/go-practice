@@ -7,21 +7,36 @@ func main() {
 
 // strings
 
-var nameOne string  = "45"
-var nameTwo = "auto string"
-var nameThree string
+// var nameOne string  = "45"
+// var nameTwo = "auto string"
+// var nameThree string
 
-fmt.Println(nameOne, nameTwo, nameThree)
+// fmt.Println(nameOne, nameTwo, nameThree)
 
-nameOne ="peach"
-nameThree = "broswer"
+// nameOne ="peach"
+// nameThree = "broswer"
 
-fmt.Println(nameOne, nameTwo, nameThree)
+// fmt.Println(nameOne, nameTwo, nameThree)
 
-nameFour := "fourthString"
+// nameFour := "fourthString"
 
-fmt.Println(nameFour)
+// fmt.Println(nameFour)
 
+//ints
+
+var ageOne int = 20
+var ageTwo = 30
+ageThree := 40
+
+fmt.Println(ageOne, ageTwo, ageThree)
+
+//bits and memory
+
+var numOne int8 = 25
+var numTwo int8 = -128
+var numThree uint16 = 256
+
+fmt.Println(numOne, numTwo, numThree)
 
 
 }
