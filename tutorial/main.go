@@ -23,6 +23,5 @@ nameFour := "fourthString"
 fmt.Println(nameFour)
 
 
-git
 
 }
