@@ -3,47 +3,75 @@ package main
 import "fmt"
 
 func main() {
+
+	age := "16"
+	name := "Abraham"
+	
+		//# Print
+
+	fmt.Print("hello \n")
+	fmt.Print("world")
+
+		//# Println
+
 	fmt.Println("hello world")
+	fmt.Println("a new line automatically")
+	fmt.Println("my age is", age, "my name is", name)
 
-// strings
+		//# Printf (formatted strings)
+	// %_ = format specifier
 
-// var nameOne string  = "45"
-// var nameTwo = "auto string"
-// var nameThree string
+	fmt.Printf("my age is %v and my name is %v \n", age, name) // format arg as variables
+	fmt.Printf("my age is %q and my name is %q \n", age, name) // format arg as double quoted string
+	fmt.Printf("my age is %T and my name is %T \n", age, name) //	format arg as type of variable
+	fmt.Printf("my age is %f \n", 4.566)                       //	format arg as float
+	fmt.Printf("my age is %0.2f \n", 4.566)                    //	format arg as float into 2 decimal place
 
-// fmt.Println(nameOne, nameTwo, nameThree)
+		//# Sprintf	(string format)
 
-// nameOne ="peach"
-// nameThree = "broswer"
+	var str = fmt.Sprintf("my age is %q and my name is %q \n", age, name) // format arg as double quoted string
 
-// fmt.Println(nameOne, nameTwo, nameThree)
+	fmt.Print("value of str is: ", str)
 
-// nameFour := "fourthString"
+	//# strings
 
-// fmt.Println(nameFour)
+	// var nameOne string  = "45"
+	// var nameTwo = "auto string"
+	// var nameThree string
 
-//ints
+	// fmt.Println(nameOne, nameTwo, nameThree)
 
-// var ageOne int = 20
-// var ageTwo = 30
-// ageThree := 40
+	// nameOne ="peach"
+	// nameThree = "broswer"
 
-// fmt.Println(ageOne, ageTwo, ageThree)
+	// fmt.Println(nameOne, nameTwo, nameThree)
 
-//bits and memory
+	// nameFour := "fourthString"
 
-// var numOne int8 = 25
-// var numTwo int8 = -128
-// var numThree uint16 = 256
+	// fmt.Println(nameFour)
 
-// fmt.Println(numOne, numTwo, numThree)
+	//# ints
 
-// float
+	// var ageOne int = 20
+	// var ageTwo = 30
+	// ageThree := 40
 
-var scoreOne float32 = 25.98
-var scoreTwo float64 = 253465772345672243233333333.7
-scoreThree := 1.5
+	// fmt.Println(ageOne, ageTwo, ageThree)
 
-fmt.Println(scoreOne, scoreTwo, scoreThree)
+	//# bits and memory
+
+	// var numOne int8 = 25
+	// var numTwo int8 = -128
+	// var numThree uint16 = 256
+
+	// fmt.Println(numOne, numTwo, numThree)
+
+	//# float
+
+	// var scoreOne float32 = 25.98
+	// var scoreTwo float64 = 253465772345672243233333333.7
+	// scoreThree := 1.5
+
+	// fmt.Println(scoreOne, scoreTwo, scoreThree)
 
 }
